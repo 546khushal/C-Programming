@@ -5,7 +5,7 @@ Date:
 */
 
 #include<stdio.h>
-
+#include<stdio.h>
 
 void print_details(char name[], char address[], char birth_date[]) {
     printf("\n--- User Details ---\n");
@@ -19,11 +19,13 @@ int main() {
 
   
     printf("Enter your Name: ");
-    scanf("%s", name); 
-
+    //scanf("%s", name); 
+    fflush(stdin);
+    gets(name);
     printf("Enter your Address: ");
-    scanf(" %[^\n]%*c", address);  
-
+    //scanf(" %[^\n]%*c", address);  
+    //fflush(stdin);
+    gets(address);
     printf("Enter your Birth Date (dd/mm/yyyy): ");
     scanf("%s", birth_date);  
 

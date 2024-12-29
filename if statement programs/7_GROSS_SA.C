@@ -12,18 +12,16 @@ Author:Khushal
 #include<conio.h>
 float Cal_GS(const float basic_pay){
 	float gs,da,hrf,pf;
+	hrf=(basic_pay*15)/100;
+	pf=(basic_pay*12)/100;
 	if(basic_pay<=5000){
 	   da=(basic_pay*30)/100;
-	   hrf=(basic_pay*15)/100;
-	   pf=(basic_pay*12)/100;
 	   gs=basic_pay+da+hrf-pf;
 	   return gs;
 	   }
 
 	else if(basic_pay>5000){
 	   da=(basic_pay*45)/100;
-	   hrf=(basic_pay*15)/100;
-	   pf=(basic_pay*12)/100;
 	   gs=basic_pay+da+hrf-pf;
 	   return gs;
 	   }
